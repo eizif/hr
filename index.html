@@ -204,14 +204,14 @@ strong, b { font-weight: 700; }
 .contact { margin-top: var(--section-gap); padding-block: var(--section-gap-s); background: var(--color-paper-2); }
 .contact__in { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--space-3xl); align-items: start; }
 .contact__who { margin-top: var(--space-lg); color: var(--color-ink-2); font-size: var(--text-lead); }
-.mail { display: inline-block; max-width: 100%; margin-top: var(--space-xl); font: 800 clamp(1.125rem, 2.6vw, 2.25rem)/1.15 var(--font-display); font-stretch: var(--display-stretch); color: var(--color-accent); text-decoration: none; overflow-wrap: break-word; min-width: 0; transition: color var(--dur-short) var(--ease-out); }
+.mail { display: inline-block; max-width: 100%; margin-top: var(--space-xl); font: 800 clamp(1.125rem, 1.8vw, 1.75rem)/1.15 var(--font-display); font-stretch: var(--display-stretch); color: var(--color-accent); text-decoration: none; overflow-wrap: break-word; min-width: 0; transition: color var(--dur-short) var(--ease-out); }
 .mail:hover { color: var(--color-focus); text-decoration: underline; text-decoration-thickness: 2px; }
 .mail:active { color: var(--color-ink); }
 .places { display: grid; gap: var(--space-xl); }
 .place { display: grid; gap: var(--space-xs); padding-top: var(--space-md); border-top: 1px solid var(--color-rule); }
 .place h3 { font-size: var(--text-lg); }
 .place address { font-style: normal; color: var(--color-ink-2); }
-@media (max-width: 75rem) { .contact__in { grid-template-columns: minmax(0, 1fr); gap: var(--space-2xl); } .places { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap-columns); } .mail { font-size: clamp(1.125rem, 4vw, 2.25rem); } }
+@media (max-width: 75rem) { .contact__in { grid-template-columns: minmax(0, 1fr); gap: var(--space-2xl); } .places { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap-columns); } .mail { font-size: clamp(1rem, 3.4vw, 2.25rem); } }
 @media (max-width: 40rem) { .places { grid-template-columns: minmax(0, 1fr); } .mail { font-stretch: 100%; } }
 
 /* footer */
@@ -425,7 +425,7 @@ main:has(.cpage:target) > :not(.cpage) { display: none; }
       <h2 id="contact-h">Ask us anything</h2>
       <p class="contact__who">Tell us the load size and where it goes. We reply by email.</p>
       <p class="contact__act"><a class="btn btn--quiet" href="#contact-us">Contact us</a></p>
-      <a class="mail" href="mailto:risinghighland@gmail.com">risinghighland@<wbr>gmail.com</a>
+      <a class="mail" href="mailto:highlandrisingsilica@gmail.com">highlandrisingsilica@<wbr>gmail.com</a>
     </div>
     <div class="places">
       <div class="place">
@@ -446,10 +446,10 @@ main:has(.cpage:target) > :not(.cpage) { display: none; }
     <div class="cpage__intro">
       <h1 id="cpage-h">Contact us</h1>
       <p class="lead">Ask about sand, loads, delivery or anything else. We reply by email.</p>
-      <p class="cpage__alt">Or write to <a class="textlink" href="mailto:risinghighland@gmail.com">risinghighland@<wbr>gmail.com</a></p>
+      <p class="cpage__alt">Or write to <a class="textlink" href="mailto:highlandrisingsilica@gmail.com">highlandrisingsilica@<wbr>gmail.com</a></p>
       <p class="cpage__back"><a class="textlink" href="#top">Back to the home page</a></p>
     </div>
-    <form class="cform" action="https://formsubmit.co/risinghighland@gmail.com" method="POST" data-endpoint="https://formsubmit.co/ajax/risinghighland@gmail.com" novalidate>
+    <form class="cform" action="https://formsubmit.co/highlandrisingsilica@gmail.com" method="POST" data-endpoint="https://formsubmit.co/ajax/highlandrisingsilica@gmail.com" novalidate>
       <input type="hidden" name="_subject" value="New enquiry from the Highland Rising website">
       <input type="hidden" name="_template" value="table">
       <input type="text" name="_honey" class="cform__trap" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -519,9 +519,9 @@ document.querySelectorAll('form.cform').forEach((form) => {
       .then((r) => r.json().then((j) => ({ ok: r.ok, j })))
       .then(({ ok, j }) => {
         if (ok && String(j.success) === 'true') { form.reset(); status.textContent = 'Thank you. Your message was sent and we will reply by email.'; }
-        else { status.textContent = (j && j.message) ? j.message : 'That did not go through. Try again, or email risinghighland@gmail.com.'; }
+        else { status.textContent = (j && j.message) ? j.message : 'That did not go through. Try again, or email highlandrisingsilica@gmail.com.'; }
       })
-      .catch(() => { status.textContent = 'That did not go through. Check your connection and try again, or email risinghighland@gmail.com.'; })
+      .catch(() => { status.textContent = 'That did not go through. Check your connection and try again, or email highlandrisingsilica@gmail.com.'; })
       .finally(() => { btn.disabled = false; btn.removeAttribute('aria-busy'); btn.textContent = 'Send message'; });
   });
 });
