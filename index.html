@@ -425,7 +425,7 @@ main:has(.cpage:target) > :not(.cpage) { display: none; }
       <h2 id="contact-h">Ask us anything</h2>
       <p class="contact__who">Tell us the load size and where it goes. We reply by email.</p>
       <p class="contact__act"><a class="btn btn--quiet" href="#contact-us">Contact us</a></p>
-      <a class="mail" href="mailto:highlandrising@gmail.com">highlandrising@<wbr>gmail.com</a>
+      <a class="mail" href="mailto:risinghighland@gmail.com">risinghighland@<wbr>gmail.com</a>
     </div>
     <div class="places">
       <div class="place">
@@ -446,10 +446,10 @@ main:has(.cpage:target) > :not(.cpage) { display: none; }
     <div class="cpage__intro">
       <h1 id="cpage-h">Contact us</h1>
       <p class="lead">Ask about sand, loads, delivery or anything else. We reply by email.</p>
-      <p class="cpage__alt">Or write to <a class="textlink" href="mailto:highlandrising@gmail.com">highlandrising@<wbr>gmail.com</a></p>
+      <p class="cpage__alt">Or write to <a class="textlink" href="mailto:risinghighland@gmail.com">risinghighland@<wbr>gmail.com</a></p>
       <p class="cpage__back"><a class="textlink" href="#top">Back to the home page</a></p>
     </div>
-    <form class="cform" action="https://formsubmit.co/highlandrising@gmail.com" method="POST" data-endpoint="https://formsubmit.co/ajax/highlandrising@gmail.com" novalidate>
+    <form class="cform" action="https://formsubmit.co/risinghighland@gmail.com" method="POST" data-endpoint="https://formsubmit.co/ajax/risinghighland@gmail.com" novalidate>
       <input type="hidden" name="_subject" value="New enquiry from the Highland Rising website">
       <input type="hidden" name="_template" value="table">
       <input type="text" name="_honey" class="cform__trap" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -519,9 +519,9 @@ document.querySelectorAll('form.cform').forEach((form) => {
       .then((r) => r.json().then((j) => ({ ok: r.ok, j })))
       .then(({ ok, j }) => {
         if (ok && String(j.success) === 'true') { form.reset(); status.textContent = 'Thank you. Your message was sent and we will reply by email.'; }
-        else { status.textContent = (j && j.message) ? j.message : 'That did not go through. Try again, or email highlandrising@gmail.com.'; }
+        else { status.textContent = (j && j.message) ? j.message : 'That did not go through. Try again, or email risinghighland@gmail.com.'; }
       })
-      .catch(() => { status.textContent = 'That did not go through. Check your connection and try again, or email highlandrising@gmail.com.'; })
+      .catch(() => { status.textContent = 'That did not go through. Check your connection and try again, or email risinghighland@gmail.com.'; })
       .finally(() => { btn.disabled = false; btn.removeAttribute('aria-busy'); btn.textContent = 'Send message'; });
   });
 });
